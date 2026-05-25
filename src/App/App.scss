@@ -1,0 +1,42 @@
+@use "../scss/color" as color;
+@use "../scss/typography" as typography;
+@use "../scss/breakpoint" as screenSize;
+
+@font-face {
+   src: url("../assets/fonts/JetBrainsMono-VariableFont_wght.ttf") format("truetype");
+   font-family: "JetBrainsMono";
+   font-weight: 100 900;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+body {
+   margin: 0;
+}
+
+body {
+   font-family: "JetBrainsMono", system-ui, sans-serif;
+   background: color.$clr-gradient;
+   color: color.$clr-grey-600;
+}
+
+img {
+   width: 100%;
+   display: block;
+}
+
+.app {
+   display: grid;
+   align-items: center;
+   min-height: 100svh;
+}
